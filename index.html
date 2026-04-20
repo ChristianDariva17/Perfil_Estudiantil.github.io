@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Perfil estudiantil de Ingeniería de Software — proyectos académicos, habilidades y datos personales." />
+  <title>Perfil Estudiantil — Ingeniería de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── FONDO ANIMADO ── -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- ══════════════════════════════════
+         HERO — DATOS PERSONALES
+    ══════════════════════════════════ -->
+    <header class="hero glass" id="hero">
+      <div class="hero__avatar-wrap">
+        <div class="hero__avatar" aria-label="Foto de perfil">
+          <span class="avatar-initials">CS</span>
+          <div class="avatar-ring"></div>
+        </div>
+        <span class="badge badge--available">Disponible</span>
+      </div>
+
+      <div class="hero__info">
+        <p class="hero__role">Estudiante · Ingeniería de Software</p>
+        <h1 class="hero__name">Christian <span class="accent">Dariva</span></h1>
+        <p class="hero__bio">
+          Apasionado por el desarrollo de software y la arquitectura de sistemas. Actualmente cursando
+          Ingeniería de Software con enfoque en desarrollo web full-stack, bases de datos relacionales
+          y metodologías ágiles. Comprometido con construir soluciones que resuelvan problemas reales.
+        </p>
+
+        <ul class="hero__tags" aria-label="Tecnologías principales">
+          <li class="tag">PHP</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">Vue.js</li>
+          <li class="tag">MySQL</li>
+          <li class="tag">CodeIgniter 4</li>
+          <li class="tag">Node.js</li>
+        </ul>
+
+        <div class="hero__contacts">
+          <a href="mailto:cristhian@email.com" class="contact-chip" id="contact-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            cristiandariva8@gmail.com
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-chip" id="contact-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-chip" id="contact-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ══════════════════════════════════
+         DATOS PERSONALES
+    ══════════════════════════════════ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 class="section__title" id="about-title">
+        <span class="section__icon" aria-hidden="true">👤</span>
+        Datos Personales
+      </h2>
+
+      <div class="info-grid glass">
+        <div class="info-item">
+          <span class="info-label">Nombre completo</span>
+          <span class="info-value">Christian Dariva Soria</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Carrera</span>
+          <span class="info-value">Ingeniería de Software</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Universidad</span>
+          <span class="info-value">Senati</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Ciclo académico</span>
+          <span class="info-value">V Ciclo · 2026</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Código de estudiante</span>
+          <span class="info-value mono">20XX-00001</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Ubicación</span>
+          <span class="info-value">Pucallpa, Perú 🇵🇪</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Disponibilidad</span>
+          <span class="info-value"><span class="dot dot--green"></span> Prácticas pre-profesionales</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Idiomas</span>
+          <span class="info-value">Español (nativo) · Inglés (B2)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         HABILIDADES
+    ══════════════════════════════════ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 class="section__title" id="skills-title">
+        <span class="section__icon" aria-hidden="true">⚡</span>
+        Habilidades Técnicas
+      </h2>
+
+      <div class="skills-grid">
+        <div class="skill-category glass" id="skill-frontend">
+          <h3 class="skill-category__title">Frontend</h3>
+          <ul class="skill-list">
+            <li class="skill-bar" data-level="85">
+              <span class="skill-name">Vue.js</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:85%"></div></div>
+            </li>
+            <li class="skill-bar" data-level="90">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div>
+            </li>
+            <li class="skill-bar" data-level="80">
+              <span class="skill-name">JavaScript</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:80%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass" id="skill-backend">
+          <h3 class="skill-category__title">Backend</h3>
+          <ul class="skill-list">
+            <li class="skill-bar">
+              <span class="skill-name">PHP / CodeIgniter 4</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:82%"></div></div>
+            </li>
+            <li class="skill-bar">
+              <span class="skill-name">Node.js / Express</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div>
+            </li>
+            <li class="skill-bar">
+              <span class="skill-name">MySQL / PostgreSQL</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:78%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass" id="skill-tools">
+          <h3 class="skill-category__title">Herramientas</h3>
+          <ul class="skill-list">
+            <li class="skill-bar">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div>
+            </li>
+            <li class="skill-bar">
+              <span class="skill-name">Docker</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:60%"></div></div>
+            </li>
+            <li class="skill-bar">
+              <span class="skill-name">Supabase / Firebase</span>
+              <div class="bar-track"><div class="bar-fill" style="--w:72%"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PROYECTOS
+    ══════════════════════════════════ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section__title" id="projects-title">
+        <span class="section__icon" aria-hidden="true">🚀</span>
+        Proyectos Académicos
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- Proyecto 1 -->
+        <article class="project-card glass" id="project-dsgperu">
+          <div class="project-card__header">
+            <div class="project-number">01</div>
+            <div class="project-tech-stack">
+              <span class="chip">PHP</span>
+              <span class="chip">CodeIgniter 4</span>
+              <span class="chip">MySQL</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Sistema de Gestión de Reclamos DSG Perú</h3>
+          <p class="project-card__desc">
+            Plataforma web para el registro, seguimiento y gestión de reclamos institucionales.
+            Implementa autenticación con control de permisos por rol, generación de reportes en PDF
+            con logo institucional, y una interfaz administrativa completa. Arquitectura MVC con
+            CodeIgniter 4 y base de datos MySQL.
+          </p>
+          <ul class="project-highlights">
+            <li>Control de acceso basado en roles (RBAC)</li>
+            <li>Exportación de reportes PDF individuales</li>
+            <li>Panel administrativo con filtros avanzados</li>
+          </ul>
+          <div class="project-card__footer">
+            <span class="status-badge status-badge--done">Completado</span>
+            <a href="#" class="project-link" id="link-dsgperu">Ver código →</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card glass" id="project-social">
+          <div class="project-card__header">
+            <div class="project-number">02</div>
+            <div class="project-tech-stack">
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">EJS</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Red Social Académica</h3>
+          <p class="project-card__desc">
+            Aplicación web de red social con arquitectura MVC desarrollada en Node.js y Express.
+            Permite a estudiantes publicar contenido, gestionar álbumes fotográficos, agregar
+            contactos y marcar favoritos. Interacciones dinámicas vía AJAX sin recarga de página.
+          </p>
+          <ul class="project-highlights">
+            <li>Autenticación de usuarios con sesiones</li>
+            <li>AJAX para carga dinámica de contenido</li>
+            <li>Sistema de reacciones y comentarios</li>
+          </ul>
+          <div class="project-card__footer">
+            <span class="status-badge status-badge--done">Completado</span>
+            <a href="#" class="project-link" id="link-social">Ver código →</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card glass" id="project-analytics">
+          <div class="project-card__header">
+            <div class="project-number">03</div>
+            <div class="project-tech-stack">
+              <span class="chip">Vue.js</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Vercel</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Formulario de Contacto con Analytics</h3>
+          <p class="project-card__desc">
+            Sistema de registro de contactos con visualización de datos y exportación PDF.
+            Integra Google Analytics para seguimiento de métricas de uso. Desplegado en Vercel
+            con Supabase como backend-as-a-service. Incluye vista de registros con filtros y
+            generación de PDF por fila con firma e imagen de evidencia.
+          </p>
+          <ul class="project-highlights">
+            <li>Integración con Google Analytics</li>
+            <li>Despliegue en Vercel + Supabase</li>
+            <li>Exportación PDF con branding institucional</li>
+          </ul>
+          <div class="project-card__footer">
+            <span class="status-badge status-badge--done">Completado</span>
+            <a href="#" class="project-link" id="link-analytics">Ver demo →</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="project-card glass" id="project-permisos">
+          <div class="project-card__header">
+            <div class="project-number">04</div>
+            <div class="project-tech-stack">
+              <span class="chip">PHP</span>
+              <span class="chip">RBAC</span>
+              <span class="chip">MVC</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Módulo de Gestión de Permisos</h3>
+          <p class="project-card__desc">
+            Módulo de seguridad avanzado para aplicaciones PHP que implementa control
+            de acceso granular. Permite definir permisos a nivel de funcionalidad,
+            asignarlos a roles y gestionar usuarios. Diseñado como servicio reutilizable
+            con patrón Writer/Reader para separación de responsabilidades.
+          </p>
+          <ul class="project-highlights">
+            <li>Arquitectura de servicios desacoplados</li>
+            <li>Gestión visual de permisos por módulo</li>
+            <li>Integración con sistema de Login existente</li>
+          </ul>
+          <div class="project-card__footer">
+            <span class="status-badge status-badge--progress">En progreso</span>
+            <a href="#" class="project-link" id="link-permisos">Ver código →</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 5 -->
+        <article class="project-card glass" id="project-bd">
+          <div class="project-card__header">
+            <div class="project-number">05</div>
+            <div class="project-tech-stack">
+              <span class="chip">MySQL</span>
+              <span class="chip">SQL</span>
+              <span class="chip">XAMPP</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Diseño de Base de Datos Relacional</h3>
+          <p class="project-card__desc">
+            Proyecto de diseño e implementación de base de datos relacional normalizada para
+            un sistema de gestión institucional. Incluye modelo entidad-relación, scripts SQL
+            de creación y migración, procedimientos almacenados y vistas para reportes.
+            Documentación técnica completa.
+          </p>
+          <ul class="project-highlights">
+            <li>Modelo ER normalizado (3FN)</li>
+            <li>Procedimientos almacenados y triggers</li>
+            <li>Scripts de migración y seeders</li>
+          </ul>
+          <div class="project-card__footer">
+            <span class="status-badge status-badge--done">Completado</span>
+            <a href="#" class="project-link" id="link-bd">Ver SQL →</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 6 -->
+        <article class="project-card glass" id="project-api">
+          <div class="project-card__header">
+            <div class="project-number">06</div>
+            <div class="project-tech-stack">
+              <span class="chip">REST API</span>
+              <span class="chip">JSON</span>
+              <span class="chip">Postman</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">API REST para Gestión Académica</h3>
+          <p class="project-card__desc">
+            Diseño e implementación de una API RESTful para un sistema de gestión académica.
+            Endpoints documentados con Postman, autenticación JWT, paginación de resultados
+            y manejo centralizado de errores. Aplicación de buenas prácticas REST y principios
+            SOLID en la arquitectura del backend.
+          </p>
+          <ul class="project-highlights">
+            <li>Autenticación y autorización con JWT</li>
+            <li>Documentación completa en Postman</li>
+            <li>Manejo de errores estandarizado</li>
+          </ul>
+          <div class="project-card__footer">
+            <span class="status-badge status-badge--done">Completado</span>
+            <a href="#" class="project-link" id="link-api">Ver docs →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         FOOTER
+    ══════════════════════════════════ -->
+    <footer class="footer" id="footer">
+      <div class="footer__inner glass">
+        <p class="footer__text">
+          Ingeniería de Software · <span class="accent">2026</span>
+        </p>
+        <p class="footer__sub">Construido con HTML & CSS puro ✦ Sin frameworks</p>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrapper -->
+
+  <script>
+    // Animar barras de habilidad al hacer scroll
+    const bars = document.querySelectorAll('.bar-fill');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    bars.forEach(bar => observer.observe(bar));
+
+    // Animar cards al aparecer
+    const cards = document.querySelectorAll('.project-card, .skill-category, .info-grid');
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = `${i * 0.07}s`;
+          entry.target.classList.add('fade-in-up');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => cardObserver.observe(card));
+  </script>
+</body>
+</html>

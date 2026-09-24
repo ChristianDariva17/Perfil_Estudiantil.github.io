@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://christiandariva17.github.io/Perfil_Estudiantil.github.io/sitemap.xml

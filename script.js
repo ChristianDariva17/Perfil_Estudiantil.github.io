@@ -55,3 +55,31 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
 } else {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
 }
+
+const analyticsId = "G-L6SCY1C2GX";
+
+function loadAnalytics() {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() {
+    window.dataLayer.push(arguments);
+  };
+  window.gtag("js", new Date());
+  window.gtag("config", analyticsId);
+
+  const analyticsScript = document.createElement("script");
+  analyticsScript.async = true;
+  analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
+  document.head.append(analyticsScript);
+}
+
+window.addEventListener(
+  "load",
+  () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 3000 });
+    } else {
+      window.setTimeout(loadAnalytics, 3000);
+    }
+  },
+  { once: true },
+);

@@ -1,0 +1,20 @@
+{
+  "name": "perfil-estudiantil-portfolio",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "quality": "npm run quality:content && npm run quality:html && npm run quality:format",
+    "quality:content": "node scripts/quality.mjs",
+    "quality:html": "html-validate index.html proyectos/sistema-desayunos.html proyectos/canales-abiertos.html proyectos/ucayali-decide.html",
+    "quality:format": "prettier --check style.css",
+    "quality:lighthouse": "lhci autorun"
+  },
+  "devDependencies": {
+    "@lhci/cli": "0.15.1",
+    "html-validate": "10.4.0",
+    "prettier": "3.9.9"
+  }
+}

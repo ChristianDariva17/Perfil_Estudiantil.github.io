@@ -1,18 +1,12 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6SCY1C2GX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-L6SCY1C2GX');
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#10110e" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <meta name="description" content="Portfolio de Christian Dariva, desarrollador de software en Pucallpa. Sistemas web, APIs y experiencias digitales pensadas para resolver problemas reales." />
+    <meta name="author" content="Christian Dariva" />
     <link rel="canonical" href="https://christiandariva17.github.io/Perfil_Estudiantil.github.io/" />
     <meta property="og:title" content="Christian Dariva — Desarrollo de software" />
     <meta property="og:description" content="Software útil. Trabajo más simple. Conocé mis proyectos y conversemos sobre el tuyo." />
@@ -23,16 +17,67 @@
     <meta property="og:image:alt" content="Portfolio de Christian Dariva, desarrollador de software en Pucallpa, Perú" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:locale" content="es_PE" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Christian Dariva — Desarrollo de software" />
     <meta name="twitter:description" content="Software útil. Trabajo más simple. Conocé mis proyectos y conversemos sobre el tuyo." />
+    <meta name="twitter:url" content="https://christiandariva17.github.io/Perfil_Estudiantil.github.io/" />
     <meta name="twitter:image" content="https://christiandariva17.github.io/Perfil_Estudiantil.github.io/assets/og-portfolio.jpg" />
     <meta name="twitter:image:alt" content="Portfolio de Christian Dariva, desarrollador de software en Pucallpa, Perú" />
     <title>Christian Dariva — Desarrollo de software</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/#person",
+            "name": "Christian Dariva",
+            "url": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/",
+            "jobTitle": "Desarrollador de software en formación",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Pucallpa",
+              "addressCountry": "PE"
+            },
+            "sameAs": [
+              "https://github.com/ChristianDariva17",
+              "https://www.linkedin.com/in/christiandarivasoria/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/#website",
+            "url": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/",
+            "name": "Christian Dariva — Portfolio",
+            "description": "Portfolio de Christian Dariva, desarrollador de software en Pucallpa.",
+            "inLanguage": "es-PE",
+            "publisher": {
+              "@id": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/#person"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/#webpage",
+            "url": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/",
+            "name": "Christian Dariva — Desarrollo de software",
+            "description": "Software útil. Trabajo más simple.",
+            "inLanguage": "es-PE",
+            "isPartOf": {
+              "@id": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/#website"
+            },
+            "about": {
+              "@id": "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/#person"
+            }
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -60,7 +105,7 @@
           <span class="art-label label-top">DESIGN<br />WITH PURPOSE</span><span class="art-label label-bottom">BUILD / TEST / IMPROVE</span>
           <span class="art-star star-one">✳</span><span class="art-star star-two">✳</span>
         </div>
-        <div class="hero-foot"><span>PORTFOLIO SELECCIONADO</span><span>01 — 05 <i></i> 2026</span></div>
+        <div class="hero-foot"><span>PORTFOLIO SELECCIONADO</span><span>01 — 06 <i></i> 2026</span></div>
       </section>
 
       <section class="work section-wrap section-pad" id="proyectos" aria-labelledby="work-title">
@@ -72,12 +117,12 @@
             <div class="ops-graphic"><div class="ops-heading"><span class="ops-symbol">S<span>.</span></span><div><span class="ops-kicker">DESAYUNOS · GESTIÓN</span><strong>Todo conectado.</strong></div></div><div class="ops-grid"><div><b>01</b><span>Productos</span><i>↗</i></div><div><b>02</b><span>Pedidos</span><i>↗</i></div><div><b>03</b><span>Inventario</span><i>↗</i></div><div><b>04</b><span>Reportes</span><i>↗</i></div></div><div class="ops-flow"><span></span><span></span><span></span><span></span><small>UN FLUJO, MENOS TAREAS SUELTAS</small></div></div>
             <span class="visual-arrow" aria-hidden="true">↗</span>
           </a>
-          <div class="project-info"><div class="project-meta"><span>01 / SISTEMA WEB</span><span class="project-status">PROYECTO ACADÉMICO</span></div><div class="project-description"><div><h3>SistemaDesayunos</h3><p>Un sistema de gestión para organizar productos, clientes, pedidos e inventario de un emprendimiento familiar de desayunos.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Gestión</span></div></div><div class="project-links"><a href="https://github.com/ChristianDariva17/SistemaDesayunos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>01 / SISTEMA WEB</span><span class="project-status">PROYECTO ACADÉMICO</span></div><div class="project-description"><div><h3>SistemaDesayunos</h3><p>Un sistema de gestión para organizar productos, clientes, pedidos e inventario de un emprendimiento familiar de desayunos.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Gestión</span></div></div><div class="project-links"><a href="proyectos/sistema-desayunos.html">Ver caso <span>↗</span></a><a href="https://github.com/ChristianDariva17/SistemaDesayunos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
         </article>
 
         <article class="project project-two">
           <a class="project-visual visual-flowers" href="https://flores-amarillas-omega-virid.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir experiencia interactiva Flores Amarillas">
-            <img src="https://flores-amarillas-omega-virid.vercel.app/media/girasoles-desktop-poster.jpg" alt="Jardín de girasoles de la experiencia Flores Amarillas" loading="lazy" />
+            <img src="assets/flores-amarillas-poster.jpg" alt="Jardín de girasoles de la experiencia Flores Amarillas" width="1920" height="1080" loading="lazy" decoding="async" />
             <div class="flowers-overlay"><span>UN PEQUEÑO MUNDO<br />HECHO CON CÓDIGO</span><b>Flores<br />amarillas<span>.</span></b><small>INTERACTIVE WEB EXPERIENCE</small></div><span class="visual-arrow" aria-hidden="true">↗</span>
           </a>
           <div class="project-info"><div class="project-meta"><span>02 / EXPERIENCIA INTERACTIVA</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Flores Amarillas</h3><p>Una escena 3D para recorrer un jardín de girasoles. Una exploración visual que combina interacción, animación y rendimiento adaptable.</p><div class="tags"><span>Three.js</span><span>WebGL</span><span>JavaScript</span><span>Responsive</span></div></div><div class="project-links"><a href="https://flores-amarillas-omega-virid.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><a href="https://github.com/ChristianDariva17/FloresAmariilas" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
@@ -96,16 +141,25 @@
             <div class="project-poster channel-poster"><span class="poster-kicker">TELEVISIÓN PÚBLICA · CINE EN ESPAÑOL</span><h3>Canales<br /><span>Abiertos.</span></h3><div class="poster-pills"><span>EN VIVO</span><span>HLS</span><span>ACCESO LEGAL</span></div></div>
             <span class="visual-arrow" aria-hidden="true">↗</span>
           </a>
-          <div class="project-info"><div class="project-meta"><span>04 / PLATAFORMA WEB</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Canales Abiertos</h3><p>Plataforma para acceder a señales de televisión pública en vivo y explorar catálogos legales de cine en español, con búsqueda por nombre, región o temática.</p><div class="tags"><span>JavaScript</span><span>HLS</span><span>hls.js</span><span>M3U</span></div></div><div class="project-links"><a href="https://christiandariva17.github.io/canales-abiertos/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><a href="https://github.com/ChristianDariva17/canales-abiertos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>04 / PLATAFORMA WEB</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Canales Abiertos</h3><p>Plataforma para acceder a señales de televisión pública en vivo y explorar catálogos legales de cine en español, con búsqueda por nombre, región o temática.</p><div class="tags"><span>JavaScript</span><span>HLS</span><span>hls.js</span><span>M3U</span></div></div><div class="project-links"><a href="proyectos/canales-abiertos.html">Ver caso <span>↗</span></a><a href="https://christiandariva17.github.io/canales-abiertos/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><a href="https://github.com/ChristianDariva17/canales-abiertos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
         </article>
 
         <article class="project project-five">
-          <a class="project-visual visual-vote" href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir la demo de Ucayali Voto 2026">
-            <div class="visual-topline"><span>CASO 05 / REPOSITORIO PRIVADO</span><span>JAVASCRIPT</span></div>
-            <div class="project-poster vote-poster"><span class="poster-kicker">UCAYALI · JAVASCRIPT</span><h3>Voto<br /><span>2026.</span></h3><div class="poster-pills"><span>JAVASCRIPT</span><span>CÓDIGO PRIVADO</span></div></div>
+          <a class="project-visual visual-vote" href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir la demo de Ucayali Decide 2026">
+            <div class="visual-topline"><span>CASO 05 / INFORMACIÓN CIUDADANA</span><span>DEMO EN VIVO</span></div>
+            <div class="project-poster vote-poster"><span class="poster-kicker">UCAYALI · ELECCIONES 2026</span><h3>Decide<br /><span>2026.</span></h3><div class="poster-pills"><span>JAVASCRIPT</span><span>CÓDIGO PRIVADO</span></div></div>
             <span class="visual-arrow" aria-hidden="true">↗</span>
           </a>
-          <div class="project-info"><div class="project-meta"><span>05 / PROYECTO</span><span class="project-status">REPOSITORIO PRIVADO</span></div><div class="project-description"><div><h3>Ucayali Voto 2026</h3><p>Demo pública del proyecto en JavaScript. El código se mantiene en un repositorio privado.</p><div class="tags"><span>JavaScript</span><span>Repositorio privado</span></div></div><div class="project-links"><a href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><span class="project-private-note">Código privado</span></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>05 / INFORMACIÓN CIUDADANA</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Ucayali Decide 2026</h3><p>Aplicación pública para consultar candidaturas, hojas de vida y planes de gobierno de Ucayali a partir de fuentes públicas.</p><div class="tags"><span>JavaScript</span><span>Fuentes públicas</span><span>JNE</span></div></div><div class="project-links"><a href="proyectos/ucayali-decide.html">Ver caso <span>↗</span></a><a href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><span class="project-private-note">Código privado</span></div></div></div>
+        </article>
+
+        <article class="project project-six">
+          <a class="project-visual visual-pulso" href="https://landing-pulso.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir la landing de Pulso">
+            <div class="visual-topline"><span>CASO 06 / LANDING DE PRODUCTO</span><span>EQUIPO EN SINCRONÍA</span></div>
+            <div class="project-poster pulso-poster"><span class="poster-kicker">PULSO · PRODUCTO DIGITAL</span><h3>Pulso<span>.</span></h3><div class="poster-pills"><span>NOTIFICACIONES</span><span>EQUIPO AUTORIZADO</span></div></div>
+            <span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-info"><div class="project-meta"><span>06 / LANDING DE PRODUCTO</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Landing Pulso</h3><p>Landing de producto que explica cómo Pulso registra y sincroniza avisos recibidos por el Android principal de un negocio con el equipo autorizado.</p><div class="tags"><span>Producto digital</span><span>UX</span><span>Responsive</span><span>Conversión</span></div><p class="project-caveat">Producto independiente; no está afiliado ni respaldado por Yape. Las notificaciones no sustituyen la verificación del movimiento en la app de origen.</p></div><div class="project-links"><a href="https://landing-pulso.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a></div></div></div>
         </article>
       </section>
 
@@ -113,9 +167,9 @@
 
       <section class="about section-wrap section-pad" id="sobre-mi" aria-labelledby="about-title"><div class="about-stamp" aria-hidden="true"><span>HOLA, SOY</span><b>CD</b><span>DEV. EN PROCESO ✳</span></div><div class="about-copy"><p class="eyebrow">UN POCO SOBRE MÍ <span class="eyebrow-line"></span></p><h2 id="about-title">Hola, soy Christian.<br /><span>Me gusta resolver.</span></h2><p>Soy desarrollador de software en formación, en Pucallpa, Perú. Estudio Ingeniería de Software en SENATI y disfruto convertir problemas cotidianos en productos digitales claros y útiles.</p><p>Me muevo entre el desarrollo web, las APIs y la experimentación visual. En cada proyecto busco entender primero a quién ayuda y qué debería hacer más fácil.</p><div class="about-facts"><span><b>01</b> Pucallpa, Perú</span><span><b>02</b> Desarrollo web</span><span><b>03</b> Aprender haciendo</span></div></div></section>
 
-      <section class="contact section-pad" id="contacto" aria-labelledby="contact-title"><div class="section-wrap contact-inner"><p class="eyebrow">¿TENÉS UNA IDEA? <span class="eyebrow-line"></span></p><h2 id="contact-title">Hagámosla<br /><span>funcionar.</span></h2><p>Contame qué necesitás mejorar o construir. Lo pensamos juntos y vemos por dónde empezar.</p><div class="contact-actions"><a class="button button-light" href="mailto:cristiandariva8@gmail.com?subject=Hablemos%20de%20un%20proyecto">Escribime un email <span aria-hidden="true">↗</span></a><a class="button button-whatsapp" href="https://wa.me/51947648334?text=Hola%2C%20vi%20tu%20portfolio%20y%20quiero%20conversar%20sobre%20un%20proyecto%20de%20desarrollo%20de%20software." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp <span aria-hidden="true">↗</span></a></div><div class="contact-scribble" aria-hidden="true">✳</div></div></section>
+      <section class="contact section-pad" id="contacto" aria-labelledby="contact-title"><div class="section-wrap contact-inner"><p class="eyebrow">¿TENÉS UNA IDEA? <span class="eyebrow-line"></span></p><h2 id="contact-title">Hagámosla<br /><span>funcionar.</span></h2><p>Contame qué necesitás mejorar o construir. Lo pensamos juntos y vemos por dónde empezar.</p><div class="contact-actions"><a class="button button-light" href="mailto:cristiandariva8@gmail.com?subject=Hablemos%20de%20un%20proyecto">Escribime un email <span aria-hidden="true">↗</span></a><a class="button button-whatsapp" href="https://wa.me/51947648334?text=Hola%2C%20vi%20tu%20portfolio%20y%20quiero%20conversar%20sobre%20un%20proyecto%20de%20desarrollo%20de%20software." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp <span aria-hidden="true">↗</span></a><a class="button button-linkedin" href="https://www.linkedin.com/in/christiandarivasoria/" target="_blank" rel="me noopener noreferrer">Ver mi LinkedIn <span aria-hidden="true">↗</span></a></div><div class="contact-scribble" aria-hidden="true">✳</div></div></section>
     </main>
 
-    <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">cd<span>.</span></span><span class="brand-name">Christian Dariva</span></a><span>Diseñado y construido con intención · <span id="year">2026</span></span><div><a href="https://github.com/ChristianDariva17" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:cristiandariva8@gmail.com">Email ↗</a></div></footer>
+    <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">cd<span>.</span></span><span class="brand-name">Christian Dariva</span></a><span>Diseñado y construido con intención · <span id="year">2026</span></span><div><a href="https://github.com/ChristianDariva17" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/christiandarivasoria/" target="_blank" rel="me noopener noreferrer">LinkedIn ↗</a><a href="mailto:cristiandariva8@gmail.com">Email ↗</a></div></footer>
   </body>
 </html>

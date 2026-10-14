@@ -363,6 +363,106 @@ button:focus-visible {
   font: 9px var(--mono);
   letter-spacing: 0.1em;
 }
+.visual-castillo {
+  background: radial-gradient(ellipse at 50% 120%, #204537, #131b17 66%);
+}
+.castillo-graphic {
+  width: min(580px, 75%);
+  height: 270px;
+  margin: 78px auto 0;
+  padding: 26px 32px;
+  border: 1px solid #366050;
+  background: #111a16e8;
+  box-shadow: 0 22px 80px #0008;
+  transform: rotate(-1.5deg);
+}
+.castillo-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #233b31;
+  padding-bottom: 18px;
+}
+.castillo-symbol {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #6ce5b1;
+  color: #101c16;
+  font-size: 20px;
+  font-weight: 800;
+}
+.castillo-symbol span {
+  color: #1c523d;
+}
+.castillo-kicker {
+  display: block;
+  font: 8px var(--mono);
+  color: #84bfab;
+  letter-spacing: 0.12em;
+}
+.castillo-heading strong {
+  display: block;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #e4f2ec;
+}
+.castillo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 19px;
+}
+.castillo-grid div {
+  min-height: 72px;
+  padding: 10px;
+  background: #16241f;
+  border: 1px solid #284439;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.castillo-grid b {
+  font: 9px var(--mono);
+  color: #6ce5b1;
+}
+.castillo-grid span {
+  font-size: 10px;
+  color: #d1e4dc;
+}
+.castillo-grid i {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  color: #5d8c7c;
+  font-style: normal;
+  font-size: 11px;
+}
+.castillo-flow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  margin-top: 16px;
+}
+.castillo-flow span {
+  height: 3px;
+  flex: 1;
+  background: #254035;
+}
+.castillo-flow span:first-child {
+  background: #6ce5b1;
+}
+.castillo-flow small {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  color: #8bbcae;
+  font: 7px var(--mono);
+  letter-spacing: 0.07em;
+}
 .visual-operations {
   background: radial-gradient(ellipse at 50% 120%, #3a4124, #1a1c15 66%);
 }
@@ -589,6 +689,39 @@ button:focus-visible {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 18px;
+}
+.project-compact .ops-graphic {
+  width: 88%;
+  height: 172px;
+  margin: 24px auto 0;
+  padding: 14px 16px;
+  transform: none;
+}
+.project-compact .ops-heading {
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.project-compact .ops-symbol {
+  width: 28px;
+  height: 28px;
+  font-size: 15px;
+}
+.project-compact .ops-heading strong {
+  font-size: 13px;
+}
+.project-compact .ops-grid {
+  margin-top: 10px;
+  gap: 5px;
+}
+.project-compact .ops-grid div {
+  min-height: 46px;
+  padding: 5px 6px;
+}
+.project-compact .ops-grid span {
+  font-size: 8px;
+}
+.project-compact .ops-flow {
+  margin-top: 10px;
 }
 .project-six .pulso-case-summary {
   display: grid;
@@ -1180,6 +1313,22 @@ button:focus-visible {
   .project-visual {
     height: 310px;
   }
+  .castillo-graphic {
+    width: 84%;
+    height: 220px;
+    margin-top: 68px;
+    padding: 20px;
+  }
+  .castillo-grid div {
+    min-height: 60px;
+    padding: 8px;
+  }
+  .castillo-grid span {
+    font-size: 9px;
+  }
+  .castillo-flow small {
+    font-size: 6px;
+  }
   .ops-graphic {
     width: 84%;
     height: 220px;
@@ -1311,6 +1460,22 @@ button:focus-visible {
   }
   .project-visual {
     height: 270px;
+  }
+  .castillo-graphic {
+    width: 88%;
+    padding: 16px 13px;
+  }
+  .castillo-grid {
+    gap: 5px;
+  }
+  .castillo-grid div {
+    min-height: 54px;
+  }
+  .castillo-grid span {
+    font-size: 8px;
+  }
+  .castillo-heading strong {
+    font-size: 15px;
   }
   .ops-graphic {
     width: 88%;
@@ -1581,6 +1746,16 @@ button:focus-visible {
     0 0 0 24px #ffffff08,
     0 0 0 52px #ffffff05;
   pointer-events: none;
+}
+.case-visual--castillo {
+  background: radial-gradient(ellipse at 75% 20%, #1c4535, #111a16 68%);
+}
+.case-visual--castillo .case-visual-kicker,
+.case-visual--castillo .case-visual-body strong {
+  color: #6ce5b1;
+}
+.case-visual--castillo .case-visual-flow i {
+  color: #6ce5b1;
 }
 .case-visual--desayunos {
   background: radial-gradient(ellipse at 80% 20%, #3a462d, #171914 67%);

@@ -4,6 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const pages = [
   "index.html",
+  "proyectos/castillo-yarinacocha.html",
   "proyectos/sistema-desayunos.html",
   "proyectos/canales-abiertos.html",
   "proyectos/ucayali-decide.html",
@@ -92,6 +93,7 @@ for (const file of pages) {
 const sitemap = readFileSync(path.join(root, "sitemap.xml"), "utf8");
 const expectedUrls = [
   siteUrl,
+  `${siteUrl}proyectos/castillo-yarinacocha.html`,
   `${siteUrl}proyectos/sistema-desayunos.html`,
   `${siteUrl}proyectos/canales-abiertos.html`,
   `${siteUrl}proyectos/ucayali-decide.html`,

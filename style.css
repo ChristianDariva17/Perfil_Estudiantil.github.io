@@ -590,6 +590,30 @@ button:focus-visible {
   flex-wrap: wrap;
   gap: 18px;
 }
+.project-six .pulso-case-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0 16px;
+}
+.project-six .pulso-case-summary > div {
+  min-width: 0;
+  padding-top: 9px;
+  border-top: 1px solid #36372f;
+}
+.project-six .pulso-case-summary dt {
+  margin-bottom: 6px;
+  color: var(--acid);
+  font: 9px var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.project-six .pulso-case-summary dd {
+  margin: 0;
+  color: #c0c0b5;
+  font-size: 12px;
+  line-height: 1.55;
+}
 .visual-flowers {
   background: #151715;
 }
@@ -1150,6 +1174,9 @@ button:focus-visible {
     margin-top: 10px;
     gap: 10px;
   }
+  .project-six .pulso-case-summary {
+    grid-template-columns: 1fr;
+  }
   .project-visual {
     height: 310px;
   }
@@ -1563,6 +1590,16 @@ button:focus-visible {
 }
 .case-visual--ucayali {
   background: radial-gradient(ellipse at 75% 20%, #403c5e, #171719 68%);
+}
+.case-visual--pulso {
+  background: radial-gradient(ellipse at 75% 20%, #27504c, #131918 68%);
+}
+.case-visual--pulso .case-visual-kicker,
+.case-visual--pulso .case-visual-body strong {
+  color: #83e0cb;
+}
+.case-visual--pulso .case-visual-flow i {
+  color: #83e0cb;
 }
 .case-visual-topline,
 .case-visual-foot {

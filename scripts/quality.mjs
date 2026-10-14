@@ -7,6 +7,7 @@ const pages = [
   "proyectos/sistema-desayunos.html",
   "proyectos/canales-abiertos.html",
   "proyectos/ucayali-decide.html",
+  "proyectos/pulso.html",
 ];
 const siteUrl =
   "https://christiandariva17.github.io/Perfil_Estudiantil.github.io/";
@@ -94,6 +95,7 @@ const expectedUrls = [
   `${siteUrl}proyectos/sistema-desayunos.html`,
   `${siteUrl}proyectos/canales-abiertos.html`,
   `${siteUrl}proyectos/ucayali-decide.html`,
+  `${siteUrl}proyectos/pulso.html`,
 ];
 
 for (const url of expectedUrls) {

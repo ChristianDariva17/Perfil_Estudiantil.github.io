@@ -105,15 +105,18 @@
     <main id="contenido">
       <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> SOFTWARE DESIGN &amp; DEVELOPMENT</p>
+          <p class="eyebrow"><span class="status-beacon" aria-hidden="true"><span class="beacon-pulse"></span></span> SOFTWARE DESIGN &amp; DEVELOPMENT · CD STUDIO</p>
           <h1 id="hero-title">Software con<br /><span>precisión y visión.</span></h1>
           <p class="hero-intro">Diseño y desarrollo soluciones digitales modernas, funcionales y escalables, combinando ingeniería de software, claridad y una experiencia de usuario cuidada.</p>
           <div class="hero-actions"><a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="#contacto">Contáctame <span aria-hidden="true">↗</span></a></div>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-          <div class="art-core">
-            <span class="core-index">CD STUDIO / 2026</span>
+        <div class="hero-art hud-frame spotlight-card" aria-hidden="true">
+          <div class="hud-grid-bg"></div>
+          <div class="hud-orbit orbit-outer"></div>
+          <div class="hud-orbit orbit-inner"></div>
+          <div class="hud-reticle"><div class="reticle-ring"></div><div class="reticle-ticks"></div></div>
+          <div class="hud-core">
+            <span class="core-index">CD STUDIO · KERNEL ACTIVE</span>
             <span class="core-glyph">
               <svg viewBox="0 0 610 515" aria-hidden="true">
                 <path fill="#FFFFFF" d="M 332,19 L 215,19 L 196,22 L 155,34 L 124,49 L 90,73 L 71,92 L 52,117 L 35,152 L 28,178 L 25,199 L 25,221 L 29,248 L 41,284 L 55,308 L 77,333 L 100,351 L 129,366 L 145,372 L 178,380 L 198,382 L 261,380 L 261,300 L 213,300 L 197,298 L 171,289 L 153,277 L 136,260 L 121,233 L 116,208 L 118,187 L 127,163 L 142,141 L 159,125 L 187,108 L 203,102 L 235,97 L 310,96 L 327,87 L 337,75 L 342,60 L 341,28 Z"/>
@@ -122,8 +125,10 @@
             </span>
             <span class="core-caption">PRECISION TECH PREMIUM</span>
           </div>
-          <span class="art-label label-top">SOFTWARE<br />DESIGN</span><span class="art-label label-bottom">BUILD / TEST / SHIP</span>
-          <span class="art-star star-one">✳</span><span class="art-star star-two">✳</span>
+          <div class="hud-telemetry hud-top-left"><span>LATENCIA</span><b>12ms · PUCALLPA</b></div>
+          <div class="hud-telemetry hud-top-right"><span>COORD</span><b>08°23'S 74°33'W</b></div>
+          <div class="hud-telemetry hud-bottom-left"><span>STACK</span><b>TS / NODE / WEBGL</b></div>
+          <div class="hud-telemetry hud-bottom-right"><span>ESTADO</span><b>SISTEMAS ONLINE</b></div>
         </div>
         <div class="hero-foot"><span>CD STUDIO · PORTAFOLIO</span><span>2026</span></div>
       </section>
@@ -131,78 +136,192 @@
       <section class="work section-wrap section-pad" id="proyectos" aria-labelledby="work-title">
         <div class="section-heading"><div><p class="eyebrow">TRABAJO SELECCIONADO <span class="eyebrow-line"></span></p><h2 id="work-title">Proyectos que<br /><span>resuelven cosas.</span></h2></div><p class="section-aside">Primero, los proyectos que mejor muestran cómo convierto necesidades en sistemas y experiencias web. Más abajo, otras exploraciones.</p></div>
 
-        <article class="project project-one">
-          <a class="project-visual visual-castillo" href="https://admin.grupodariva.cloud/" target="_blank" rel="noreferrer" aria-label="Abrir Castillo Yarinacocha, sistema de gestión hotelera y operaciones">
-            <div class="visual-topline"><span>CASO 01 / SISTEMA HOTELERO &amp; PMS</span><span>EN PRODUCCIÓN · PUCALLPA, PE</span></div>
-            <div class="castillo-graphic">
-              <div class="castillo-heading">
-                <span class="castillo-symbol">CY<span>.</span></span>
-                <div>
-                  <span class="castillo-kicker">CASTILLO YARINACOCHA · PMS &amp; ERP</span>
-                  <strong>Operaciones conectadas.</strong>
+        <div class="bento-grid">
+          <!-- BENTO TITAN: Castillo Yarinacocha (Full Width 2-Col) -->
+          <article class="bento-card bento-titan spotlight-card">
+            <div class="bento-card-inner">
+              <div class="bento-topline">
+                <span class="bento-badge"><span class="beacon-pulse-sm"></span> EN PRODUCCIÓN REAL · PUCALLPA, PE</span>
+                <span class="bento-case-tag">CASO 01 / SISTEMA PMS &amp; GESTIÓN</span>
+              </div>
+              <div class="titan-content-grid">
+                <div class="titan-info">
+                  <h3>Castillo Yarinacocha</h3>
+                  <p>Sistema integral de gestión hotelera y operaciones turísticas en producción real. Centraliza reservas, recepción, KDS de cocina en tiempo real, arqueos de caja con corte Z térmico de 80mm, control de accesos QR a piscinas y marcación biométrica con hardware ZKteco.</p>
+                  <div class="tags"><span>Node.js / TS</span><span>PostgreSQL</span><span>Redis TLS</span><span>WebSockets</span><span>Docker</span><span>Hardware ZK</span></div>
+                  <div class="project-links">
+                    <a class="button-link" href="proyectos/castillo-yarinacocha.html">Ver caso de estudio <span>↗</span></a>
+                    <a class="button-link-secondary" href="https://admin.grupodariva.cloud/" target="_blank" rel="noreferrer">Portal Admin <span>↗</span></a>
+                    <a class="button-link-secondary" href="https://cliente.grupodariva.cloud/" target="_blank" rel="noreferrer">Portal Cliente <span>↗</span></a>
+                    <span class="project-private-note">Código privado</span>
+                  </div>
+                </div>
+                <div class="titan-visual">
+                  <div class="telemetry-dashboard">
+                    <div class="dashboard-header">
+                      <div class="dashboard-title">
+                        <span class="castillo-symbol">CY<span>.</span></span>
+                        <div><strong>Castillo Yarinacocha</strong><small>Telemetría en Vivo · 10 Áreas</small></div>
+                      </div>
+                      <div class="dashboard-status">
+                        <span class="live-pill"><span class="beacon-pulse-xs"></span> WEBSOCKETS ONLINE</span>
+                        <button type="button" class="telemetry-toggle" aria-pressed="false" aria-label="Pausar o reanudar telemetría simulada">Pausar</button>
+                      </div>
+                    </div>
+                    <div class="dashboard-body">
+                      <div class="telemetry-console">
+                        <div class="console-topbar"><span class="console-dot red"></span><span class="console-dot yellow"></span><span class="console-dot green"></span><span class="console-label">terminal@castillo-core:~</span></div>
+                        <div class="telemetry-logs" aria-live="polite"></div>
+                      </div>
+                      <div class="dashboard-grid">
+                        <div class="dash-stat"><b>01</b><span>Front Desk</span><i>↗</i></div>
+                        <div class="dash-stat"><b>02</b><span>KDS Cocina</span><i>↗</i></div>
+                        <div class="dash-stat"><b>03</b><span>Caja &amp; Corte Z</span><i>↗</i></div>
+                        <div class="dash-stat"><b>04</b><span>Accesos QR &amp; ZK</span><i>↗</i></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="castillo-grid">
-                <div><b>01</b><span>Front Desk</span><i>↗</i></div>
-                <div><b>02</b><span>KDS Cocina</span><i>↗</i></div>
-                <div><b>03</b><span>Caja &amp; Corte Z</span><i>↗</i></div>
-                <div><b>04</b><span>Accesos QR &amp; ZK</span><i>↗</i></div>
+            </div>
+          </article>
+
+          <!-- BENTO 02: Flores Amarillas (3D WebGL Showcase) -->
+          <article class="bento-card bento-half spotlight-card">
+            <div class="bento-card-inner">
+              <div class="bento-topline">
+                <span class="bento-badge-accent">EXP. INTERACTIVA 3D</span>
+                <span class="bento-case-tag">CASO 02</span>
               </div>
-              <div class="castillo-flow">
-                <span></span><span></span><span></span><span></span>
-                <small>10 ÁREAS · WEBSOCKETS · REDIS TLS</small>
+              <div class="bento-visual visual-flowers-bento">
+                <img src="assets/flores-amarillas-poster.jpg" alt="Jardín de girasoles de la experiencia Flores Amarillas" width="1920" height="1080" loading="lazy" decoding="async" />
+                <div class="flowers-overlay-bento">
+                  <span class="overlay-tag">THREE.JS · WEBGL</span>
+                  <h4>Flores amarillas<span>.</span></h4>
+                  <small>Jardín 3D interactivo con rendimiento adaptable</small>
+                </div>
+              </div>
+              <div class="bento-body">
+                <p>Una escena 3D para recorrer un jardín de girasoles en el navegador. Una exploración visual que combina interacción física, animación procedural y rendimiento optimizado.</p>
+                <div class="tags"><span>Three.js</span><span>WebGL</span><span>JavaScript</span><span>Shader Arts</span></div>
+                <div class="project-links">
+                  <a class="button-link" href="https://flores-amarillas-omega-virid.vercel.app/" target="_blank" rel="noreferrer">Ver demo 3D <span>↗</span></a>
+                  <a class="button-link-secondary" href="https://github.com/ChristianDariva17/FloresAmariilas" target="_blank" rel="noreferrer">Ver código <span>↗</span></a>
+                </div>
               </div>
             </div>
-            <span class="visual-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info"><div class="project-meta"><span>01 / SISTEMA PMS &amp; GESTIÓN</span><span class="project-status status-live"><i></i> SISTEMA EN PRODUCCIÓN</span></div><div class="project-description"><div><h3>Castillo Yarinacocha</h3><p>Sistema integral de gestión hotelera y operaciones turísticas en producción real. Centraliza reservas, recepción, KDS de cocina en tiempo real, arqueos de caja con corte Z térmico de 80mm, control de accesos QR a piscinas y marcación biométrica con hardware ZKteco.</p><div class="tags"><span>Node.js / TS</span><span>PostgreSQL</span><span>Redis TLS</span><span>WebSockets</span><span>Docker</span><span>Hardware ZK</span></div></div><div class="project-links"><a href="proyectos/castillo-yarinacocha.html">Ver caso <span>↗</span></a><a href="https://admin.grupodariva.cloud/" target="_blank" rel="noreferrer">Portal Admin <span>↗</span></a><a href="https://cliente.grupodariva.cloud/" target="_blank" rel="noreferrer">Portal Cliente <span>↗</span></a><span class="project-private-note">Código privado</span></div></div></div>
-        </article>
+          </article>
 
-        <article class="project project-four">
-          <a class="project-visual visual-channels" href="https://christiandariva17.github.io/canales-abiertos/" target="_blank" rel="noreferrer" aria-label="Abrir Canales Abiertos, plataforma de señales públicas y catálogos legales">
-            <div class="visual-topline"><span>CASO 02 / PLATAFORMA WEB</span><span>SEÑALES + CATÁLOGO LEGAL</span></div>
-            <div class="project-poster channel-poster"><span class="poster-kicker">TELEVISIÓN PÚBLICA · CINE EN ESPAÑOL</span><h3>Canales<br /><span>Abiertos.</span></h3><div class="poster-pills"><span>EN VIVO</span><span>HLS</span><span>ACCESO LEGAL</span></div></div>
-            <span class="visual-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info"><div class="project-meta"><span>02 / PLATAFORMA WEB</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Canales Abiertos</h3><p>Plataforma para acceder a señales de televisión pública en vivo y explorar catálogos legales de cine en español, con búsqueda por nombre, región o temática.</p><div class="tags"><span>JavaScript</span><span>HLS</span><span>hls.js</span><span>M3U</span></div></div><div class="project-links"><a href="proyectos/canales-abiertos.html">Ver caso <span>↗</span></a><a href="https://christiandariva17.github.io/canales-abiertos/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><a href="https://github.com/ChristianDariva17/canales-abiertos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
-        </article>
+          <!-- BENTO 03: Canales Abiertos (Streaming / HLS) -->
+          <article class="bento-card bento-half spotlight-card">
+            <div class="bento-card-inner">
+              <div class="bento-topline">
+                <span class="bento-badge">STREAMING &amp; MULTIMEDIA</span>
+                <span class="bento-case-tag">CASO 03</span>
+              </div>
+              <div class="bento-visual visual-channels-bento">
+                <div class="channel-graphic-hud">
+                  <div class="channel-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                  <div class="channel-overlay-info">
+                    <span class="channel-kicker">TELEVISIÓN PÚBLICA · CINE EN ESPAÑOL</span>
+                    <h4>Canales Abiertos<span>.</span></h4>
+                    <div class="poster-pills"><span>EN VIVO</span><span>HLS.JS</span><span>ACCESO LEGAL</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bento-body">
+                <p>Plataforma para acceder a señales de televisión pública en vivo y explorar catálogos legales de cine en español, con búsqueda por región o temática y tolerancia a fallos.</p>
+                <div class="tags"><span>JavaScript</span><span>HLS</span><span>hls.js</span><span>M3U</span></div>
+                <div class="project-links">
+                  <a class="button-link" href="proyectos/canales-abiertos.html">Ver caso <span>↗</span></a>
+                  <a class="button-link-secondary" href="https://christiandariva17.github.io/canales-abiertos/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a>
+                  <a class="button-link-secondary" href="https://github.com/ChristianDariva17/canales-abiertos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <article class="project project-five">
-          <a class="project-visual visual-vote" href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir la demo de Ucayali Decide 2026">
-            <div class="visual-topline"><span>CASO 03 / INFORMACIÓN CIUDADANA</span><span>DEMO EN VIVO</span></div>
-            <div class="project-poster vote-poster"><span class="poster-kicker">UCAYALI · ELECCIONES 2026</span><h3>Decide<br /><span>2026.</span></h3><div class="poster-pills"><span>JAVASCRIPT</span><span>CÓDIGO PRIVADO</span></div></div>
-            <span class="visual-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info"><div class="project-meta"><span>03 / INFORMACIÓN CIUDADANA</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h3>Ucayali Decide 2026</h3><p>Aplicación pública para consultar candidaturas, hojas de vida y planes de gobierno de Ucayali a partir de fuentes públicas.</p><div class="tags"><span>JavaScript</span><span>Fuentes públicas</span><span>JNE</span></div></div><div class="project-links"><a href="proyectos/ucayali-decide.html">Ver caso <span>↗</span></a><a href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><span class="project-private-note">Código privado</span></div></div></div>
-        </article>
-        <div class="more-projects-heading"><h3 id="more-projects-title">Más proyectos</h3><p>Exploraciones visuales, prototipos y piezas de producto que amplían el recorrido.</p></div>
+          <!-- BENTO 04: Landing Pulso (Producto & UX) -->
+          <article class="bento-card bento-third spotlight-card">
+            <div class="bento-card-inner">
+              <div class="bento-topline">
+                <span class="bento-badge">LANDING DE PRODUCTO</span>
+                <span class="bento-case-tag">CASO 04</span>
+              </div>
+              <div class="bento-visual visual-pulso-bento">
+                <div class="pulso-hud-card">
+                  <div class="pulso-toast-preview">
+                    <div class="toast-icon">⚡</div>
+                    <div class="toast-text"><b>Pulso · Notificación</b><span>Aviso recibido y sincronizado con equipo</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bento-body">
+                <h4>Landing Pulso</h4>
+                <p>Landing de producto que explica cómo Pulso registra y sincroniza avisos de negocio con el equipo autorizado en tiempo real.</p>
+                <div class="tags"><span>Producto digital</span><span>UX</span><span>Conversión</span></div>
+                <div class="project-links">
+                  <a class="button-link" href="proyectos/pulso.html">Ver caso <span>↗</span></a>
+                  <a class="button-link-secondary" href="https://landing-pulso.vercel.app/" target="_blank" rel="noreferrer">Ver landing <span>↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <article class="project project-six project-compact">
-          <a class="project-visual visual-pulso" href="https://landing-pulso.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir la landing de Pulso">
-            <div class="visual-topline"><span>CASO 04 / LANDING DE PRODUCTO</span><span>EQUIPO EN SINCRONÍA</span></div>
-            <div class="project-poster pulso-poster"><span class="poster-kicker">PULSO · PRODUCTO DIGITAL</span><h3>Pulso<span>.</span></h3><div class="poster-pills"><span>NOTIFICACIONES</span><span>EQUIPO AUTORIZADO</span></div></div>
-            <span class="visual-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info"><div class="project-meta"><span>04 / LANDING DE PRODUCTO</span><span class="project-status status-live"><i></i> LANDING EN VIVO</span></div><div class="project-description"><div><h4>Landing Pulso</h4><p>Landing de producto que explica cómo Pulso registra y sincroniza avisos recibidos por el Android principal de un negocio con el equipo autorizado.</p><div class="tags"><span>Producto digital</span><span>UX</span><span>Responsive</span><span>Conversión</span></div><dl class="pulso-case-summary"><div><dt>Reto</dt><dd>Explicar el flujo entre el Android principal, Pulso y el equipo autorizado, sin presentar una notificación como confirmación de pago.</dd></div><div><dt>Aporte</dt><dd>Desarrollé la landing para explicar el recorrido en tres pasos e incluir funciones, pantallas de ejemplo, preguntas frecuentes y un canal de consulta.</dd></div><div><dt>Resultado</dt><dd>La landing presenta el flujo y sus límites; no hay métricas públicas para atribuir conversiones o impacto de negocio.</dd></div></dl><p class="project-caveat">Producto independiente; no está afiliado ni respaldado por Yape. Las notificaciones no sustituyen la verificación del movimiento en la app de origen.</p></div><div class="project-links"><a href="proyectos/pulso.html">Ver caso <span>↗</span></a><a href="https://landing-pulso.vercel.app/" target="_blank" rel="noreferrer">Ver landing <span>↗</span></a></div></div></div>
-        </article>
+          <!-- BENTO 05: Ucayali Decide 2026 (Datos cívicos) -->
+          <article class="bento-card bento-third spotlight-card">
+            <div class="bento-card-inner">
+              <div class="bento-topline">
+                <span class="bento-badge">INFORMACIÓN CIUDADANA</span>
+                <span class="bento-case-tag">CASO 05</span>
+              </div>
+              <div class="bento-visual visual-vote-bento">
+                <div class="vote-hud-card">
+                  <span class="vote-kicker">ELECCIONES 2026 · UCAYALI</span>
+                  <h4>Decide 2026<span>.</span></h4>
+                  <div class="poster-pills"><span>FUENTES JNE</span><span>TRANSPARENCIA</span></div>
+                </div>
+              </div>
+              <div class="bento-body">
+                <h4>Ucayali Decide 2026</h4>
+                <p>Aplicación pública para consultar candidaturas, hojas de vida y planes de gobierno de Ucayali a partir de datos del JNE.</p>
+                <div class="tags"><span>JavaScript</span><span>Fuentes públicas</span><span>JNE</span></div>
+                <div class="project-links">
+                  <a class="button-link" href="proyectos/ucayali-decide.html">Ver caso <span>↗</span></a>
+                  <a class="button-link-secondary" href="https://ucayali-voto-2026.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a>
+                  <span class="project-private-note">Código privado</span>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <article class="project project-two project-compact">
-          <a class="project-visual visual-flowers" href="https://flores-amarillas-omega-virid.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir experiencia interactiva Flores Amarillas">
-            <img src="assets/flores-amarillas-poster.jpg" alt="Jardín de girasoles de la experiencia Flores Amarillas" width="1920" height="1080" loading="lazy" decoding="async" />
-            <div class="flowers-overlay"><span>UN PEQUEÑO MUNDO<br />HECHO CON CÓDIGO</span><b>Flores<br />amarillas<span>.</span></b><small>INTERACTIVE WEB EXPERIENCE</small></div><span class="visual-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info"><div class="project-meta"><span>05 / EXPERIENCIA INTERACTIVA</span><span class="project-status status-live"><i></i> DEMO EN VIVO</span></div><div class="project-description"><div><h4>Flores Amarillas</h4><p>Una escena 3D para recorrer un jardín de girasoles. Una exploración visual que combina interacción, animación y rendimiento adaptable.</p><div class="tags"><span>Three.js</span><span>WebGL</span><span>JavaScript</span><span>Responsive</span></div></div><div class="project-links"><a href="https://flores-amarillas-omega-virid.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span>↗</span></a><a href="https://github.com/ChristianDariva17/FloresAmariilas" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
-        </article>
-
-        <article class="project project-one project-compact">
-          <a class="project-visual visual-operations" href="https://github.com/ChristianDariva17/SistemaDesayunos" target="_blank" rel="noreferrer" aria-label="Ver código de SistemaDesayunos en GitHub">
-            <div class="visual-topline"><span>CASO 06 / SISTEMA DE GESTIÓN</span><span>ACADEMIA + NEGOCIO FAMILIAR</span></div>
-            <div class="ops-graphic"><div class="ops-heading"><span class="ops-symbol">S<span>.</span></span><div><span class="ops-kicker">DESAYUNOS · GESTIÓN</span><strong>Todo conectado.</strong></div></div><div class="ops-grid"><div><b>01</b><span>Productos</span><i>↗</i></div><div><b>02</b><span>Pedidos</span><i>↗</i></div><div><b>03</b><span>Inventario</span><i>↗</i></div><div><b>04</b><span>Reportes</span><i>↗</i></div></div><div class="ops-flow"><span></span><span></span><span></span><span></span><small>UN FLUJO, MENOS TAREAS SUELTAS</small></div></div>
-            <span class="visual-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info"><div class="project-meta"><span>06 / SISTEMA WEB</span><span class="project-status">PROYECTO ACADÉMICO</span></div><div class="project-description"><div><h4>SistemaDesayunos</h4><p>Un sistema de gestión para organizar productos, clientes, pedidos e inventario de un emprendimiento familiar de desayunos.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Gestión</span></div></div><div class="project-links"><a href="proyectos/sistema-desayunos.html">Ver caso <span>↗</span></a><a href="https://github.com/ChristianDariva17/SistemaDesayunos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a></div></div></div>
-        </article>
-
+          <!-- BENTO 06: SistemaDesayunos (Gestión) -->
+          <article class="bento-card bento-third spotlight-card">
+            <div class="bento-card-inner">
+              <div class="bento-topline">
+                <span class="bento-badge">GESTIÓN &amp; BACKEND</span>
+                <span class="bento-case-tag">CASO 06</span>
+              </div>
+              <div class="bento-visual visual-ops-bento">
+                <div class="ops-pipeline-mini">
+                  <div class="ops-node"><span>01</span><b>Productos</b></div>
+                  <div class="ops-node"><span>02</span><b>Pedidos</b></div>
+                  <div class="ops-node"><span>03</span><b>Inventario</b></div>
+                  <div class="ops-node"><span>04</span><b>Reportes</b></div>
+                </div>
+              </div>
+              <div class="bento-body">
+                <h4>SistemaDesayunos</h4>
+                <p>Sistema de gestión para organizar productos, clientes, pedidos e inventario de un negocio familiar de desayunos.</p>
+                <div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Gestión</span></div>
+                <div class="project-links">
+                  <a class="button-link" href="proyectos/sistema-desayunos.html">Ver caso <span>↗</span></a>
+                  <a class="button-link-secondary" href="https://github.com/ChristianDariva17/SistemaDesayunos" target="_blank" rel="noreferrer">Ver código <span>↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="services section-pad" id="servicios" aria-labelledby="services-title"><div class="section-wrap"><div class="section-heading services-heading"><div><p class="eyebrow">CÓMO PUEDO AYUDAR <span class="eyebrow-line"></span></p><h2 id="services-title">Del problema<br /><span>a una solución.</span></h2></div><p class="section-aside">Trabajo con objetivos claros, comunicación directa y entregas que podés probar.</p></div><div class="service-list"><article><span class="service-number">01</span><div><h3>Sistemas web</h3><p>Herramientas para ordenar procesos, datos y tareas de tu negocio.</p></div><span class="service-icon" aria-hidden="true">↗</span></article><article><span class="service-number">02</span><div><h3>APIs e integraciones</h3><p>Conecto servicios y automatizo pasos repetitivos para ahorrar tiempo.</p></div><span class="service-icon" aria-hidden="true">↗</span></article><article><span class="service-number">03</span><div><h3>Experiencias digitales</h3><p>Landing pages y sitios claros, rápidos y adaptados a cada pantalla.</p></div><span class="service-icon" aria-hidden="true">↗</span></article></div></div></section>
@@ -271,3 +390,4 @@
     </footer>
   </body>
 </html>
+

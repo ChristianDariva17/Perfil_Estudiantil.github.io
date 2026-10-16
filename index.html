@@ -98,7 +98,14 @@
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a><a href="#servicios">Qué desarrollo</a><a href="#como-trabajo">Cómo trabajo</a><a href="#sobre-mi">Sobre mí</a><a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+        <a href="#proyectos">Proyectos</a><a href="#servicios">Qué desarrollo</a><a href="#como-trabajo">Cómo trabajo</a><a href="#sobre-mi">Sobre mí</a>
+        <button type="button" class="nav-cmd-trigger" id="open-palette-btn" aria-label="Abrir paleta de comandos (Ctrl+K)">
+          <kbd aria-hidden="true">⌘K</kbd>
+        </button>
+        <button type="button" class="nav-cli-trigger" id="open-cli-btn" aria-label="Abrir terminal interactivo">
+          <code aria-hidden="true">&gt;_ CLI</code>
+        </button>
+        <a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
@@ -172,6 +179,33 @@
                       <div class="telemetry-console">
                         <div class="console-topbar"><span class="console-dot red"></span><span class="console-dot yellow"></span><span class="console-dot green"></span><span class="console-label">terminal@castillo-core:~</span></div>
                         <div class="telemetry-logs" aria-live="polite"></div>
+                      </div>
+                      <div class="topology-block">
+                        <div class="topology-header">
+                          <span>TOPOLOGÍA DE EVENTOS EN TIEMPO REAL</span>
+                          <button type="button" class="simulate-btn" id="simulate-packet-btn">Simular evento ⚡</button>
+                        </div>
+                        <div class="topology-nodes">
+                          <div class="topo-node" data-node="front">
+                            <b>Front / KDS</b>
+                            <small>Web Client</small>
+                          </div>
+                          <span class="topo-arrow" id="arrow-1" aria-hidden="true">→</span>
+                          <div class="topo-node" data-node="node">
+                            <b>Node.js Core</b>
+                            <small>Cluster API</small>
+                          </div>
+                          <span class="topo-arrow" id="arrow-2" aria-hidden="true">→</span>
+                          <div class="topo-node" data-node="redis">
+                            <b>Redis TLS</b>
+                            <small>Pub/Sub Cache</small>
+                          </div>
+                          <span class="topo-arrow" id="arrow-3" aria-hidden="true">→</span>
+                          <div class="topo-node" data-node="db">
+                            <b>PostgreSQL</b>
+                            <small>ACID Store</small>
+                          </div>
+                        </div>
                       </div>
                       <div class="dashboard-grid">
                         <div class="dash-stat"><b>01</b><span>Front Desk</span><i>↗</i></div>
@@ -324,7 +358,79 @@
         </div>
       </section>
 
-      <section class="services section-pad" id="servicios" aria-labelledby="services-title"><div class="section-wrap"><div class="section-heading services-heading"><div><p class="eyebrow">CÓMO PUEDO AYUDAR <span class="eyebrow-line"></span></p><h2 id="services-title">Del problema<br /><span>a una solución.</span></h2></div><p class="section-aside">Trabajo con objetivos claros, comunicación directa y entregas que podés probar.</p></div><div class="service-list"><article><span class="service-number">01</span><div><h3>Sistemas web</h3><p>Herramientas para ordenar procesos, datos y tareas de tu negocio.</p></div><span class="service-icon" aria-hidden="true">↗</span></article><article><span class="service-number">02</span><div><h3>APIs e integraciones</h3><p>Conecto servicios y automatizo pasos repetitivos para ahorrar tiempo.</p></div><span class="service-icon" aria-hidden="true">↗</span></article><article><span class="service-number">03</span><div><h3>Experiencias digitales</h3><p>Landing pages y sitios claros, rápidos y adaptados a cada pantalla.</p></div><span class="service-icon" aria-hidden="true">↗</span></article></div></div></section>
+      <section class="services section-pad" id="servicios" aria-labelledby="services-title">
+        <div class="section-wrap">
+          <div class="section-heading services-heading">
+            <div>
+              <p class="eyebrow">CÓMO PUEDO AYUDAR <span class="eyebrow-line"></span></p>
+              <h2 id="services-title">Del problema<br /><span>a una solución.</span></h2>
+            </div>
+            <p class="section-aside">Trabajo con objetivos claros, comunicación directa y entregas que podés probar.</p>
+          </div>
+          <div class="service-list">
+            <article>
+              <span class="service-number">01</span>
+              <div>
+                <h3>Sistemas web</h3>
+                <p>Herramientas para ordenar procesos, datos y tareas de tu negocio.</p>
+              </div>
+              <span class="service-icon" aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="service-number">02</span>
+              <div>
+                <h3>APIs e integraciones</h3>
+                <p>Conecto servicios y automatizo pasos repetitivos para ahorrar tiempo.</p>
+              </div>
+              <span class="service-icon" aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="service-number">03</span>
+              <div>
+                <h3>Experiencias digitales</h3>
+                <p>Landing pages y sitios claros, rápidos y adaptados a cada pantalla.</p>
+              </div>
+              <span class="service-icon" aria-hidden="true">↗</span>
+            </article>
+          </div>
+
+          <!-- Live API Sandbox Inspector -->
+          <div class="api-sandbox-card border-beam spotlight-card">
+            <div class="sandbox-header">
+              <div class="sandbox-title">
+                <p class="eyebrow">EXPLORADOR EN VIVO · SIMULADOR REST / JSON</p>
+                <h3>API Playground CD STUDIO<span>.</span></h3>
+                <p>Prueba consultas simuladas a la arquitectura de microservicios y proyectos de CD STUDIO.</p>
+              </div>
+              <div class="sandbox-controls">
+                <label for="api-endpoint-select" class="sr-only">Seleccionar endpoint de API</label>
+                <select class="sandbox-select" id="api-endpoint-select">
+                  <option value="/api/v1/health">GET /api/v1/health</option>
+                  <option value="/api/v1/castillo/rooms">GET /api/v1/castillo/rooms</option>
+                  <option value="/api/v1/services">GET /api/v1/services</option>
+                  <option value="/api/v1/stack">GET /api/v1/stack</option>
+                </select>
+                <button type="button" class="sandbox-run-btn" id="api-run-btn">
+                  <span>Ejecutar</span> <span aria-hidden="true">⚡</span>
+                </button>
+              </div>
+            </div>
+            <div class="sandbox-response-box">
+              <div class="response-status-bar">
+                <span class="res-badge" id="api-status-badge">STATUS: 200 OK</span>
+                <span class="res-time" id="api-time-badge">LATENCIA: 14ms · CACHED</span>
+              </div>
+              <pre class="response-code" id="api-json-display"><code>{
+  <span class="json-key">"status"</span>: <span class="json-str">"healthy"</span>,
+  <span class="json-key">"node"</span>: <span class="json-str">"pucallpa-edge-01"</span>,
+  <span class="json-key">"uptime"</span>: <span class="json-str">"99.98%"</span>,
+  <span class="json-key">"latency_ms"</span>: <span class="json-num">14</span>,
+  <span class="json-key">"author"</span>: <span class="json-str">"Christian Dariva"</span>
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="process section-pad" id="como-trabajo" aria-labelledby="process-title">
         <div class="section-wrap">
@@ -372,6 +478,24 @@
       </section>
 
       <section class="contact section-pad" id="contacto" aria-labelledby="contact-title"><div class="section-wrap contact-inner"><p class="eyebrow">¿TENÉS UNA IDEA? <span class="eyebrow-line"></span></p><h2 id="contact-title">Hagámosla<br /><span>funcionar.</span></h2><p>Contame qué necesitás mejorar o construir. Lo pensamos juntos y vemos por dónde empezar.</p><div class="contact-actions"><a class="button button-light" href="mailto:cristiandariva8@gmail.com?subject=Hablemos%20de%20un%20proyecto">Escribime un email <span aria-hidden="true">↗</span></a><a class="button button-whatsapp" href="https://wa.me/51947648334?text=Hola%2C%20quisiera%20coordinar%20la%20reuni%C3%B3n%20gratuita%20de%2030%20minutos%20para%20conversar%20sobre%20mi%20proyecto.%20Necesito%3A%20" target="_blank" rel="noopener noreferrer">Coordinar reunión gratuita <span aria-hidden="true">↗</span></a><a class="button button-linkedin" href="https://www.linkedin.com/in/christiandarivasoria/" target="_blank" rel="me noopener noreferrer">Ver mi LinkedIn <span aria-hidden="true">↗</span></a></div><div class="contact-scribble" aria-hidden="true">✳</div></div></section>
+
+      <!-- Floating Dynamic Island Dock -->
+      <nav class="floating-dock" id="floating-dock" aria-label="Acceso rápido interactivo">
+        <a class="dock-link active" href="#inicio">Inicio</a>
+        <a class="dock-link" href="#proyectos">Proyectos</a>
+        <a class="dock-link" href="#servicios">Servicios</a>
+        <a class="dock-link" href="#contacto">Contacto</a>
+        <span class="dock-divider" aria-hidden="true"></span>
+        <button type="button" class="dock-btn" id="dock-palette-btn" aria-label="Paleta de comandos (Ctrl+K)">
+          <span aria-hidden="true">⌘K</span>
+        </button>
+        <button type="button" class="dock-btn" id="dock-cli-btn" aria-label="Terminal interactivo">
+          <span aria-hidden="true">&gt;_ CLI</span>
+        </button>
+        <button type="button" class="dock-btn" id="dock-audio-btn" aria-label="Alternar audio háptico" aria-pressed="false">
+          <span id="dock-audio-label" aria-hidden="true">🔇 OFF</span>
+        </button>
+      </nav>
     </main>
 
     <footer class="site-footer">
@@ -388,6 +512,49 @@
       <span>Software con precisión y visión. · <span id="year">2026</span></span>
       <div><a href="https://github.com/ChristianDariva17" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/christiandarivasoria/" target="_blank" rel="me noopener noreferrer">LinkedIn ↗</a><a href="mailto:cristiandariva8@gmail.com">Email ↗</a></div>
     </footer>
+
+    <!-- Command Palette Modal (Cmd + K) -->
+    <div class="palette-backdrop" id="command-palette" role="dialog" aria-modal="true" aria-label="Paleta de Comandos">
+      <div class="palette-window">
+        <div class="palette-search-wrap">
+          <span class="palette-icon" aria-hidden="true">🔍</span>
+          <input type="text" class="palette-input" id="palette-search" placeholder="Escribe un comando o busca en el portafolio..." autocomplete="off" aria-label="Buscar en la paleta de comandos" />
+          <span class="palette-esc-badge">ESC</span>
+        </div>
+        <ul class="palette-list" id="palette-results"></ul>
+        <div class="palette-footer">
+          <span>Navegar ↑↓ · Ejecutar Enter · Cerrar Esc</span>
+          <span>CD STUDIO KERNEL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dual-Mode: Terminal CLI Overlay -->
+    <div class="cli-overlay" id="cli-overlay" role="dialog" aria-modal="true" aria-label="Terminal CLI CD Studio">
+      <div class="cli-window">
+        <div class="cli-topbar">
+          <div class="cli-dots">
+            <button type="button" class="cli-dot close" id="cli-close-btn" aria-label="Cerrar terminal"></button>
+            <button type="button" class="cli-dot min" aria-label="Minimizar"></button>
+            <button type="button" class="cli-dot max" aria-label="Maximizar"></button>
+          </div>
+          <span class="cli-title">christian@cd-studio: ~ (bash / zsh)</span>
+          <span class="cli-title-right">Escribe 'help' o 'gui'</span>
+        </div>
+        <div class="cli-body" id="cli-scroll-body">
+          <div class="cli-output" id="cli-output" aria-live="polite"></div>
+          <form class="cli-prompt-line" id="cli-form" action="#">
+            <label for="cli-input" class="sr-only">Comando CLI</label>
+            <span class="cli-prefix">cd-studio:~ guest$</span>
+            <input type="text" class="cli-input" id="cli-input" spellcheck="false" autocomplete="off" />
+            <button type="submit" class="sr-only">Ejecutar comando</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matrix Rain Canvas Overlay (Konami Code Easter Egg) -->
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
   </body>
 </html>
 
